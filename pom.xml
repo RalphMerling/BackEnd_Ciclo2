@@ -57,7 +57,8 @@
 	<!-- Responsável pela camada web (controllers, requisições HTTP) -->
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-webmvc</artifactId>
+		<!-- <artifactId>spring-boot-starter-webmvc</artifactId> -->
+		<artifactId>spring-boot-starter-web</artifactId>
 	</dependency>
 
 	<!-- Responsável pelas persistências no BD, utilizando as anotations da JPA -->

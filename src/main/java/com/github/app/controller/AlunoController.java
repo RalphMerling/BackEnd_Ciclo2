@@ -44,7 +44,8 @@ public class AlunoController {
     }
 
     // ERRO 5: deveria ser @PutMapping — @PostMapping fará este endpoint conflitar com o cadastrar()
-    @PostMapping
+    // @PostMapping
+    @PutMapping
     @Transactional
     public void atualizar(@RequestBody DadosAtualizacaoAluno dados) {
         var aluno = repository.getReferenceById(dados.id());
@@ -53,7 +54,8 @@ public class AlunoController {
 
     @DeleteMapping("/{id}")
     @Transactional
-    public void excluir(@PathVariable String id) {
+    // public void excluir(@PathVariable String id) {
+    public void excluir(@PathVariable Integer id) {    
         repository.deleteById(id);
     }
 }
